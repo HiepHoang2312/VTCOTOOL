@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "babelOptions": {
+      "presets": [
+        [
+          "babel-preset-react-app",
+          false
+        ],
+        "babel-preset-react-app/prod"
+      ]
+    }
+  },
+  "rules": {
+    "react-hooks/exhaustive-deps": "off"
+  }
+}

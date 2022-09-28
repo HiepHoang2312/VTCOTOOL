@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Text {
+  color: rgba(255, 255, 255, 0.9);
+}
+.SmallText {
+  color: #55595b;
+}
+
+.ColorCore {
+  background: linear-gradient(91.92deg, #004cde 0.37%, #9747ff 97.62%);
+}
+
+.TextCore {
+  background: linear-gradient(91.92deg, #004cde 0.37%, #9747ff 97.62%);
+  background-clip: text;
+  color: transparent;
+}
+
+body {
+  background: #f8fbff;
+}
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
