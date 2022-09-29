@@ -1,6 +1,6 @@
-import 'src/Components/Section/Header/Header.css';
+import './index.css';
 
-import logo from 'src/Assets/Frame.png';
+import logo from 'src/Assets/Image/Frame.png';
 
 import { useEffect, useState } from 'react';
 

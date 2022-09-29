@@ -2,8 +2,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-import playButton from 'src/Assets/Icon/Play.svg';
-
+import { IconPlay } from 'src/Assets/Icon';
 import image17 from 'src/Assets/Image/image17.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -40,11 +39,7 @@ const SliderSection = () => {
                   <img src={image17} alt="image19" />
                   <div className="absolute w-full h-full   top-0 left-0">
                     <div className="flex justify-center items-center h-full">
-                      <img
-                        src={playButton}
-                        alt="play"
-                        className="w-10 md:w-20 h-10 md:h-20"
-                      />
+                      <IconPlay className="w-10 md:w-20 h-10 md:h-20" />
                     </div>
                   </div>
                 </div>
@@ -54,11 +49,7 @@ const SliderSection = () => {
                   <img src={image17} alt="image19" />
                   <div className="absolute w-full h-full   top-0 left-0">
                     <div className="flex justify-center items-center h-full">
-                      <img
-                        src={playButton}
-                        alt="play"
-                        className="w-10 md:w-20 h-10 md:h-20"
-                      />
+                      <IconPlay className="w-10 md:w-20 h-10 md:h-20" />
                     </div>
                   </div>
                 </div>
@@ -68,11 +59,7 @@ const SliderSection = () => {
                   <img src={image17} alt="image19" />
                   <div className="absolute w-full h-full   top-0 left-0">
                     <div className="flex justify-center items-center h-full">
-                      <img
-                        src={playButton}
-                        alt="play"
-                        className="w-10 md:w-20 h-10 md:h-20"
-                      />
+                      <IconPlay className="w-10 md:w-20 h-10 md:h-20" />
                     </div>
                   </div>
                 </div>

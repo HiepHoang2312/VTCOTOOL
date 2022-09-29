@@ -1,4 +1,4 @@
-import 'src/Components/Section/FormRegister/FormRegister.css';
+import './index.css';
 
 import { useForm } from 'react-hook-form';
 

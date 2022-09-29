@@ -2,7 +2,7 @@
   background: rgba(255, 255, 255, 0.3);
 }
 .registerBackground {
-  background-image: url('../../../Assets/Image/image14.png');
+  background-image: url('src/Assets/Image/image14.png');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;

@@ -1,8 +1,5 @@
-import logo from 'src/Assets/logo.png';
-import linkin from 'src/Assets/Icon/linked_in.svg';
-import fb from 'src/Assets/Icon/f.svg';
-import instagram from 'src/Assets/Icon/instagram.svg';
-import twitter from 'src/Assets/Icon/twitter.svg';
+import logo from 'src/Assets/Image/logo.png';
+import { IconFb, IconIns, IconLinkin, IconTwitter } from 'src/Assets/Icon';
 
 const Footer = () => {
   return (
@@ -15,10 +12,10 @@ const Footer = () => {
                 <img src={logo} alt="logo" />
                 <p className="my-5">Tools hỗ trợ chuyên ngành cầu đường</p>
                 <div className="flex gap-6">
-                  <img src={linkin} alt="linkin" />
-                  <img src={fb} alt="linkin" />
-                  <img src={instagram} alt="linkin" />
-                  <img src={twitter} alt="linkin" />
+                  <IconLinkin />
+                  <IconFb />
+                  <IconIns />
+                  <IconTwitter />
                 </div>
               </div>
             </div>

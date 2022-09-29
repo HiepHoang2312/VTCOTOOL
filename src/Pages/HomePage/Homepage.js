@@ -1,12 +1,12 @@
-import Banner from 'src/Components/Section/Banner/Banner';
-import Customer from 'src/Components/Section/Customer/Customer';
-import Footer from 'src/Components/Section/Footer/Footer';
-import FormRegister from 'src/Components/Section/FormRegister/FormRegister';
-import Header from 'src/Components/Section/Header/Header';
-import Introduce from 'src/Components/Section/Introduce/Introduce';
-import Outstanding from 'src/Components/Section/Outstanding/Outstanding';
-import PriceList from 'src/Components/Section/PriceList/PriceList';
-import SliderSection from 'src/Components/Section/Slider/SliderSection';
+import Banner from './Components/Section/Banner';
+import Customer from './Components/Section/Customer';
+import Footer from './Components/Section/Footer';
+import FormRegister from './Components/Section/FormRegister';
+import Header from './Components/Section/Header';
+import Introduce from './Components/Section/Introduce';
+import Outstanding from './Components/Section/Outstanding';
+import PriceList from './Components/Section/PriceList';
+import SliderSection from './Components/Section/Slider';
 
 const Homepage = () => {
   return (
