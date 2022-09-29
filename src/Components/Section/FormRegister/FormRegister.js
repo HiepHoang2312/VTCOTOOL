@@ -21,7 +21,7 @@ const FormRegister = () => {
             <h1 className="font-bold text-xl md:text-4xl mb-5 text-center">
               Đăng Ký Dùng Thử
             </h1>
-            <p className="SmallText mb-6 md:mb-12 text-sm md:text-base">
+            <p className=" mb-6 md:mb-12 text-sm md:text-base">
               Hãy để lại thông tin bên dưới chúng tôi sẽ liên hệ bạn để tư vấn .
             </p>
             <form onSubmit={handleSubmit(onSubmit)}>

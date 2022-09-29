@@ -40,7 +40,11 @@ const SliderSection = () => {
                   <img src={image17} alt="image19" />
                   <div className="absolute w-full h-full   top-0 left-0">
                     <div className="flex justify-center items-center h-full">
-                      <img src={playButton} alt="play" width={84} height={84} />
+                      <img
+                        src={playButton}
+                        alt="play"
+                        className="w-10 md:w-20 h-10 md:h-20"
+                      />
                     </div>
                   </div>
                 </div>
@@ -50,7 +54,11 @@ const SliderSection = () => {
                   <img src={image17} alt="image19" />
                   <div className="absolute w-full h-full   top-0 left-0">
                     <div className="flex justify-center items-center h-full">
-                      <img src={playButton} alt="play" width={84} height={84} />
+                      <img
+                        src={playButton}
+                        alt="play"
+                        className="w-10 md:w-20 h-10 md:h-20"
+                      />
                     </div>
                   </div>
                 </div>
@@ -60,13 +68,20 @@ const SliderSection = () => {
                   <img src={image17} alt="image19" />
                   <div className="absolute w-full h-full   top-0 left-0">
                     <div className="flex justify-center items-center h-full">
-                      <img src={playButton} alt="play" width={84} height={84} />
+                      <img
+                        src={playButton}
+                        alt="play"
+                        className="w-10 md:w-20 h-10 md:h-20"
+                      />
                     </div>
                   </div>
                 </div>
               </SwiperSlide>
             </Swiper>
           </>
+          <button className="font-bold text-white ColorCore px-2 md:px-5 py-3 rounded-lg text-sm md:text-base mt-5  ">
+            Xem thêm
+          </button>
         </div>
       </div>
     </section>

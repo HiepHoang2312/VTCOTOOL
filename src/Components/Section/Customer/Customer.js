@@ -11,14 +11,14 @@ const Customer = () => {
         </h1>
         <div className="flex justify-center">
           <div className="grid grid-cols-3 gap-10 md:gap-20">
-            <div>
-              <img src={image7} alt="image7" />
+            <div className="flex justify-center">
+              <img src={image9} alt="image9" />
             </div>
-            <div>
+            <div className="flex justify-center">
               <img src={image8} alt="image8" />
             </div>
-            <div>
-              <img src={image9} alt="image9" />
+            <div className="flex justify-center">
+              <img src={image7} alt="image7" />
             </div>
           </div>
         </div>

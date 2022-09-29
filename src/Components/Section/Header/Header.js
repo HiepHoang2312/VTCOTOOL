@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-
 import 'src/Components/Section/Header/Header.css';
 
-import logo from 'src/Assets/logo.png';
+import logo from 'src/Assets/Frame.png';
+
+import { useEffect, useState } from 'react';
 
 const Header = () => {
   const [navShow, SetNavShow] = useState(false);
@@ -11,7 +11,7 @@ const Header = () => {
 
   useEffect(() => {
     const onscrollBackTop = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 220) {
         setA(true);
       } else {
         setA(false);
@@ -23,7 +23,9 @@ const Header = () => {
   return (
     <header
       className={
-        a ? 'fixed top-0 w-full z-40 ColorCore' : 'fixed top-0 w-full z-40'
+        a
+          ? 'fixed top-0 w-full z-40 ColorCore opacity-80 shadow-lg'
+          : 'fixed top-0 w-full z-40'
       }
     >
       <div>
@@ -61,12 +63,12 @@ const Header = () => {
             <nav
               className={
                 a
-                  ? ' space-x-10 hidden lg:flex  lg:w-1/2 bg-transparent py-5 px-10'
-                  : ' space-x-10 hidden lg:flex  lg:w-1/2 nav-menu py-5 px-10  '
+                  ? ' space-x-10 hidden lg:flex  lg:w-3/4 bg-transparent py-5 px-10'
+                  : ' space-x-10 hidden lg:flex  lg:w-3/4 nav-menu py-5 px-10  '
               }
               id="nav1"
             >
-              <div className="flex flex-col text-center mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              <div className="flex flex-col text-center mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 lg:gap-0 xl:gap-7">
                 <div className="nav-item  block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
                   Trang chủ
                 </div>
@@ -78,6 +80,12 @@ const Header = () => {
                 </div>
                 <div className="nav-item  block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
                   Bẳng giá
+                </div>
+                <div className="nav-item  block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
+                  Sản phẩm
+                </div>
+                <div className="nav-item  block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
+                  Hướng dẫn
                 </div>
                 <div className="nav-item  block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
                   Liên hệ
@@ -104,6 +112,12 @@ const Header = () => {
                 </div>
                 <div className="nav-item  block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
                   Bẳng giá
+                </div>
+                <div className="nav-item  block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
+                  Sản phẩm
+                </div>
+                <div className="nav-item  block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
+                  Hướng dẫn
                 </div>
                 <div className="nav-item  block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white">
                   Liên hệ
