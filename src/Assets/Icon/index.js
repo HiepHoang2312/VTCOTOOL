@@ -14,6 +14,9 @@ import { ReactComponent as IconCompareArrow } from './icon3.svg';
 import { ReactComponent as IconGetApp } from './icon4.svg';
 import { ReactComponent as IconLabel } from './icon5.svg';
 import { ReactComponent as IconMore } from './icon6.svg';
+import { ReactComponent as IconPlayDark } from './Iconplaydark.svg';
+import { ReactComponent as IconShare } from './IconShare.svg';
+import { ReactComponent as IconAvatar } from './avatar.svg';
 
 export {
   CarVector,
@@ -32,4 +35,7 @@ export {
   IconMore,
   IconDataExploration,
   IconWebHook,
+  IconPlayDark,
+  IconShare,
+  IconAvatar,
 };

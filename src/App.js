@@ -1,10 +1,15 @@
-import Homepage from 'src/Pages/HomePage/Homepage';
+import Homepage from 'src/Pages/HomePage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import VtcoTool from './Pages/VtcoTool';
 
 const App = () => {
   return (
-    <div>
-      <Homepage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="" element={<Homepage />} />
+        <Route path="/VtcoTool" element={<VtcoTool />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

@@ -11,14 +11,14 @@ const Header = () => {
   const [a, setA] = useState(true);
 
   useEffect(() => {
-    const onscrollBackTop = () => {
+    const onScroll = () => {
       if (window.scrollY > 220) {
         setA(true);
       } else {
         setA(false);
       }
     };
-    window.addEventListener('scroll', onscrollBackTop);
+    window.addEventListener('scroll', onScroll);
   }, []);
 
   return (
@@ -49,11 +49,11 @@ const Header = () => {
             <div className="-my-2 -mr-2 lg:hidden relative">
               <button
                 type="button"
-                className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                className="inline-flex items-center justify-center rounded-md ColorCore p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                 onClick={() => SetNavShow(!navShow)}
               >
                 <svg
-                  className="h-6 w-6"
+                  className="h-6 w-6 text-white"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"

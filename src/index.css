@@ -9,6 +9,14 @@
   color: #55595b;
 }
 
+.Blue {
+  color: #0d4c6f;
+}
+
+.Water {
+  color: #117db7;
+}
+
 .ColorCore {
   background: linear-gradient(91.92deg, #004cde 0.37%, #9747ff 97.62%);
 }

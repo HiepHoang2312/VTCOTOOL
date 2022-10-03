@@ -2,8 +2,8 @@ import './index.css';
 
 const PriceList = () => {
   return (
-    <section className="py-8 md:py-16">
-      <div className="container mx-auto 2xl:px-44">
+    <section className="py-10 md:py-20">
+      <div className="container mx-auto 2xl:px-44 mb-10">
         <div className=" w-full">
           <h1 className="mb-5 md:mb-20 font-bold text-xl py-1 md:text-4xl TextCore  text-center">
             Bảng Giá
