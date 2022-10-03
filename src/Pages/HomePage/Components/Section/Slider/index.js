@@ -23,11 +23,11 @@ const SliderSection = () => {
               grabCursor={true}
               centeredSlides={true}
               loop={true}
-              spaceBetween={-100}
+              spaceBetween={-120}
               coverflowEffect={{
                 rotate: 50,
-                stretch: 100,
-                depth: 100,
+                stretch: -100,
+                depth: 400,
                 modifier: 1,
                 slideShadows: true,
               }}

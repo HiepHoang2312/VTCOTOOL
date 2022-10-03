@@ -10,7 +10,7 @@ const Customer = () => {
           Khách hàng của chúng tôi
         </h1>
         <div className="flex justify-center">
-          <div className="grid grid-cols-3 gap-10 md:gap-20">
+          <div className="grid grid-cols-3 gap-2 md:gap-20">
             <div className="flex justify-center">
               <img src={image9} alt="image9" />
             </div>

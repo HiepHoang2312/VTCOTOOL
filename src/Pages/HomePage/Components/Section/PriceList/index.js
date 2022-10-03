@@ -1,3 +1,5 @@
+import './index.css';
+
 const PriceList = () => {
   return (
     <section className="py-8 md:py-16">
@@ -7,7 +9,7 @@ const PriceList = () => {
             Bảng Giá
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8">
-            <div className="p-6 h-auto  rounded-lg bg-white flex flex-col justify-between">
+            <div className="p-6 h-auto  bg-white flex flex-col justify-between cardPrize">
               <div>
                 <h1 className="font-semibold text-base md:text-2xl md:mb-6 mb-2">
                   Bản Trail
@@ -28,7 +30,7 @@ const PriceList = () => {
                 </button>
               </div>
             </div>
-            <div className="p-6 h-auto  rounded-lg bg-white  flex flex-col justify-between">
+            <div className="p-6 h-auto  cardPrize bg-white  flex flex-col justify-between">
               <div>
                 <h1 className="font-semibold text-base md:text-2xl md:mb-6 mb-2">
                   Bản chính thức
@@ -52,10 +54,10 @@ const PriceList = () => {
                 </button>
               </div>
             </div>
-            <div className="p-6 h-auto  rounded-lg bg-white  flex flex-col justify-between">
+            <div className="p-6 h-auto  cardPrize bg-white  flex flex-col justify-between">
               <div>
                 <h1 className="font-semibold text-base md:text-2xl md:mb-6 mb-2">
-                  Bản Trail
+                  Gói Combo
                 </h1>
                 <p className="SmallText mb-2 text-xs md:text-base">Chỉ từ</p>
                 <h2 className="font-bold text-xl md:text-4xl mb-2 TextCore">

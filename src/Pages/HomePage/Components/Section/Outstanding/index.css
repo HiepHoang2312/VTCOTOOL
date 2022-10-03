@@ -1,0 +1,24 @@
+.tabButton {
+  position: relative;
+}
+
+.tabButton::after {
+  content: '';
+  position: absolute;
+  bottom: -1.5px;
+  left: 0;
+  height: 1px;
+
+  background: linear-gradient(91.92deg, #004cde 0.37%, #9747ff 97.62%);
+  animation-name: example;
+  animation-duration: 1s;
+  width: 100%;
+}
+@keyframes example {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

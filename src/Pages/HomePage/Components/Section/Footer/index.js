@@ -1,4 +1,4 @@
-import logo from 'src/Assets/Image/logo.png';
+import logo from 'src/Assets/Image/image2.png';
 import { IconFb, IconIns, IconLinkin, IconTwitter } from 'src/Assets/Icon';
 
 const Footer = () => {

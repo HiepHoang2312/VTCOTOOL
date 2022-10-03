@@ -8,6 +8,12 @@ import { ReactComponent as IconStatistic } from './Statistic.svg';
 import { ReactComponent as IconCoordinates } from './Coordinates.svg';
 import { ReactComponent as IconPrint } from './Print.svg';
 import { ReactComponent as IconVector } from './Vector.svg';
+import { ReactComponent as IconDataExploration } from './icon1.svg';
+import { ReactComponent as IconWebHook } from './icon2.svg';
+import { ReactComponent as IconCompareArrow } from './icon3.svg';
+import { ReactComponent as IconGetApp } from './icon4.svg';
+import { ReactComponent as IconLabel } from './icon5.svg';
+import { ReactComponent as IconMore } from './icon6.svg';
 
 export {
   CarVector,
@@ -20,4 +26,10 @@ export {
   IconStatistic,
   IconVector,
   IconPrint,
+  IconCompareArrow,
+  IconGetApp,
+  IconLabel,
+  IconMore,
+  IconDataExploration,
+  IconWebHook,
 };
