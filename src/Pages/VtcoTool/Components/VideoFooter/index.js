@@ -1,8 +1,29 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
 import { IconAvatar, IconShare } from 'src/Assets/Icon';
+
+import instance from 'src/Mockdata';
 
 const VideoFooter = () => {
   const [tag, SetTag] = useState(true);
+
+  const [dataComment, SetDataComment] = useState();
+
+  useEffect(() => {
+    getComment();
+  }, []);
+
+  const getComment = async () => {
+    const result = await instance.get('/comment').then(function (response) {
+      return response.data.comment;
+    });
+
+    SetDataComment(result);
+
+    return result;
+  };
+
+  console.log(dataComment);
 
   return (
     <section>
@@ -76,89 +97,92 @@ const VideoFooter = () => {
                 </p>
               </div>
               <div className={tag ? 'hidden' : ''}>
-                <div className="mb-4 font-bold text-xs">20 bình luận</div>
-                <div className="p-4 bg-white rounded-md mb-3">
-                  <div className="flex justify-between">
-                    <div className="flex">
-                      <IconAvatar className="w-8 h-8" />
-                      <div className="ml-3">
-                        <h2 className="Water font-bold ">Hiền</h2>
-                        <span className="mb-4">Hướng dẫn bổ ích</span>
-                        <div className="flex gap-5 SmallText">
-                          <p>Thích</p>
-                          <p>Phản hồi</p>
+                {dataComment?.map((comment) => (
+                  <div key={comment?.id}>
+                    <div className="mb-4 font-bold text-xs">
+                      {comment.countComment} bình luận
+                    </div>
+                    {comment.data.map((data) => (
+                      <div key={data.id}>
+                        <div className="p-4 bg-white rounded-md mb-3">
+                          <div className="flex justify-between">
+                            <div className="flex">
+                              <IconAvatar className="w-8 h-8" />
+                              <div className="ml-3">
+                                <h2 className="Water font-bold ">
+                                  {data.name}
+                                </h2>
+                                <span className="mb-4">{data.content}</span>
+                                <div className="flex gap-5 SmallText">
+                                  <p>Thích</p>
+                                  <p>Phản hồi</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="SmallText">
+                              <p>{data.time}</p>
+                            </div>
+                          </div>
+                        </div>
+                        {data?.reply.map((replys) => (
+                          <div key={replys.id}>
+                            <div className="p-4 bg-white rounded-md mb-3 ml-14">
+                              <div className="flex justify-between">
+                                <div className="flex">
+                                  <IconAvatar className="w-8 h-8" />
+                                  <div className="ml-3">
+                                    <h2 className="Water font-bold ">
+                                      {replys.name}
+                                    </h2>
+                                    <p className="SmallText border-l-2 my-2 pl-2">
+                                      Đã trả lời{' '}
+                                      <span className="Water font-bold">
+                                        {data.name}
+                                      </span>
+                                    </p>
+                                    <span className="mb-4">
+                                      {replys.content}
+                                    </span>
+                                    <div className="flex gap-5 SmallText">
+                                      <p>Thích</p>
+                                      <p>Phản hồi</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="SmallText">
+                                  <p>{replys.time} </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+                {dataComment?.data?.map((data) => (
+                  <div key={data.id} className="p-4 bg-white rounded-md mb-3">
+                    <div className="flex justify-between">
+                      <div className="flex">
+                        <IconAvatar className="w-8 h-8" />
+                        <div className="ml-3">
+                          <h2 className="Water font-bold ">Hiền</h2>
+                          <span className="mb-4">Hướng dẫn bổ ích</span>
+                          <div className="flex gap-5 SmallText">
+                            <p>Thích</p>
+                            <p>Phản hồi</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="SmallText">
-                      <p>16 giờ </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4 bg-white rounded-md mb-3 ml-14">
-                  <div className="flex justify-between">
-                    <div className="flex">
-                      <IconAvatar className="w-8 h-8" />
-                      <div className="ml-3">
-                        <h2 className="Water font-bold ">Admin</h2>
-                        <p className="SmallText border-l-2 my-2 pl-2">
-                          Đã trả lời{' '}
-                          <span className="Water font-bold">Hiền</span>
-                        </p>
-                        <span className="mb-4">Cảm ơn bạn</span>
-                        <div className="flex gap-5 SmallText">
-                          <p>Thích</p>
-                          <p>Phản hồi</p>
-                        </div>
+                      <div className="SmallText">
+                        <p>16 giờ </p>
                       </div>
                     </div>
-                    <div className="SmallText">
-                      <p>16 giờ </p>
-                    </div>
                   </div>
-                </div>
-                <div className="p-4 bg-white rounded-md mb-3 ml-14">
-                  <div className="flex justify-between">
-                    <div className="flex">
-                      <IconAvatar className="w-8 h-8" />
-                      <div className="ml-3">
-                        <h2 className="Water font-bold ">Admin</h2>
-                        <p className="SmallText border-l-2 my-2 pl-2">
-                          Đã trả lời{' '}
-                          <span className="Water font-bold">Hiền</span>
-                        </p>
-                        <span className="mb-4">Cảm ơn bạn</span>
-                        <div className="flex gap-5 SmallText">
-                          <p>Thích</p>
-                          <p>Phản hồi</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="SmallText">
-                      <p>16 giờ </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4 bg-white rounded-md mb-3">
-                  <div className="flex justify-between">
-                    <div className="flex">
-                      <IconAvatar className="w-8 h-8" />
-                      <div className="ml-3">
-                        <h2 className="Water font-bold ">Hiền</h2>
-                        <span className="mb-4">Hướng dẫn bổ ích</span>
-                        <div className="flex gap-5 SmallText">
-                          <p>Thích</p>
-                          <p>Phản hồi</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="SmallText">
-                      <p>16 giờ </p>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
+
             <div className="lg:col-span-1 col-span-2 lg:ml-32">
               <div className="flex gap-20 mb-10">
                 <div>
@@ -170,6 +194,7 @@ const VideoFooter = () => {
                   <p className="text-center mt-2">Chia sẻ</p>
                 </div>
               </div>
+
               <div>
                 <div className="text-2xl font-semibold">Tags</div>
 

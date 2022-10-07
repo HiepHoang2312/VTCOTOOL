@@ -6,8 +6,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="VtcoTool" element={<VtcoTool />} />
         <Route path="" element={<Homepage />} />
-        <Route path="/VtcoTool" element={<VtcoTool />} />
       </Routes>
     </BrowserRouter>
   );

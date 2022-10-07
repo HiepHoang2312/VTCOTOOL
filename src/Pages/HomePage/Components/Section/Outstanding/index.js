@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import './index.css';
 
 import {
@@ -13,12 +15,10 @@ import {
   IconDataExploration,
   IconWebHook,
 } from 'src/Assets/Icon';
-import { useState } from 'react';
 
 const Outstanding = () => {
   const [tab, setTab] = useState(false);
 
-  console.log(tab);
   return (
     <section className="md:py-16 py-8">
       <div className="container mx-auto">
