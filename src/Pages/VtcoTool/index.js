@@ -12,8 +12,11 @@ const VtcoTool = () => {
   return (
     <div>
       <Header logo={logo2}></Header>
+
       <GuildVideo></GuildVideo>
+
       <VideoFooter />
+
       <Footer></Footer>
     </div>
   );

@@ -45,7 +45,7 @@ const GuildVideo = () => {
   };
 
   return (
-    <section className="lg:py-8 py-4 mt-2">
+    <section className="lg:py-16 py-8 mt-2">
       <div className="p-8 bg-white ">
         <div>
           <h1 className="text-2xl font-bold mb-2 Blue">
@@ -74,7 +74,7 @@ const GuildVideo = () => {
                       className={`${getAcitveTab(
                         data?.id,
                         'font-bold activeTabCategrory',
-                      )} SmallText  px-2 md:px-5 py-3 rounded-lg text-sm md:text-base `}
+                      )} SmallText  px-2 md:px-5 py-3 rounded-lg text-sm md:text-base  z-20`}
                       onClick={() => {
                         SetTabCategrory(data?.id);
                         getListCategrory(data?.id);

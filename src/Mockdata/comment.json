@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "countComment": 20,
+    "data": [
+      {
+        "id": 1,
+        "name": "Hiền",
+        "time": "16 giờ",
+        "content": "Hướng dẫn bổ ích",
+        "reply": [
+          {
+            "id": 1,
+            "name": "Admin",
+            "content": "Cảm ơn bạn",
+            "time": "16 giờ"
+          },
+          {
+            "id": 2,
+            "name": "Admin",
+            "content": "Cảm ơn bạn",
+            "time": "16 giờ"
+          }
+        ]
+      }
+    ]
+  }
+]

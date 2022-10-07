@@ -22,19 +22,19 @@ const Outstanding = () => {
   return (
     <section className="md:py-16 py-8">
       <div className="container mx-auto">
-        <div className=" w-full text-center">
+        <div className=" w-full text-center ">
           <h1 className="md:mb-10 mb-5 font-bold text-xl md:text-4xl TextCore py-1">
             Chức năng nổi bật
           </h1>
-          <div className="mb-10">
+          <div className="mb-10 z-50">
             <button
-              className={tab ? ' p-2' : 'tabButton p-2'}
+              className={tab ? 'SmallText p-2 z-20' : 'tabButton p-2 z-20'}
               onClick={() => setTab(false)}
             >
               AutoCAD
             </button>
             <button
-              className={tab ? 'tabButton p-2' : ' p-2'}
+              className={tab ? 'tabButton p-2 z-20' : 'SmallText p-2 z-20'}
               onClick={() => setTab(true)}
             >
               Civil 3D

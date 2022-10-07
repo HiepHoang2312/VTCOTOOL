@@ -31,7 +31,7 @@ const Header = (props) => {
   return (
     <header
       className={
-        a ? 'fixed top-2 w-full z-40  opacity-80' : 'fixed top-0 w-full z-40'
+        a ? 'fixed top-2 w-full z-20  opacity-80' : 'fixed top-0 w-full z-50'
       }
     >
       <div>
@@ -71,9 +71,7 @@ const Header = (props) => {
             </div>
             <nav
               className={
-                a
-                  ? ' space-x-10 hidden lg:flex  lg:w-3/4 nav-menu  px-10'
-                  : ' space-x-10 hidden lg:flex  lg:w-3/4 nav-menu  px-10  '
+                ' space-x-10 hidden lg:flex  lg:w-3/4 nav-menu  px-10 z-10'
               }
               id="nav1"
             >
@@ -154,7 +152,7 @@ const Header = (props) => {
             <nav
               className={
                 navShow
-                  ? ' space-x-10 lg:hidden flex justify-center lg:w-1/2 ColorCore py-5 px-10 absolute top-16 w-full left-0'
+                  ? ' space-x-10 lg:hidden flex justify-center lg:w-1/2 ColorCore py-5 px-10 absolute top-16 w-full left-0 z-50'
                   : 'hidden'
               }
               id="nav1"

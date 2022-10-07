@@ -29,12 +29,12 @@ const VideoFooter = () => {
     <section>
       <div className="lg:px-24 px-12">
         <div className=" flex justify-between mb-11">
-          <div>
+          <div className="z-50">
             <button
               className={
                 tag
-                  ? 'p-3 TextCore tabButton font-semibold'
-                  : 'font-semibold p-3'
+                  ? 'p-3 TextCore tabButton font-semibold z-50'
+                  : 'font-semibold p-3 z-50'
               }
               onClick={() => SetTag(true)}
             >
@@ -43,8 +43,8 @@ const VideoFooter = () => {
             <button
               className={
                 tag
-                  ? 'font-semibold p-3'
-                  : 'p-3 TextCore tabButton font-semibold'
+                  ? 'font-semibold p-3 z-50'
+                  : 'p-3 TextCore tabButton font-semibold z-50'
               }
               onClick={() => SetTag(false)}
             >

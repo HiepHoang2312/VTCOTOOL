@@ -8,7 +8,7 @@ const PriceList = () => {
           <h1 className="mb-5 md:mb-20 font-bold text-xl py-1 md:text-4xl TextCore  text-center">
             Bảng Giá
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-8">
             <div className="p-6 h-auto  bg-white flex flex-col justify-between cardPrize">
               <div>
                 <h1 className="font-semibold text-base md:text-2xl md:mb-6 mb-2">
