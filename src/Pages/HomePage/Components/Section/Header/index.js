@@ -31,12 +31,12 @@ const Header = (props) => {
   return (
     <header
       className={
-        a ? 'fixed top-2 w-full z-20  opacity-80' : 'fixed top-0 w-full z-50'
+        a ? 'fixed top-2 w-full   opacity-80 z-20 ' : 'fixed top-0 w-full z-20 '
       }
     >
       <div>
         <div>
-          <div className="flex items-center justify-between  border-gray-100   lg:space-x-10 lg:px-0 px-5">
+          <div className="flex items-center justify-between  border-gray-100   lg:space-x-10 lg:px-0 px-5 z-20">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <div className="py-5 pl-8">
                 <img
@@ -46,7 +46,7 @@ const Header = (props) => {
                 />
               </div>
             </div>
-            <div className="-my-2 -mr-2 lg:hidden relative">
+            <div className=" lg:hidden relative">
               <button
                 type="button"
                 className="inline-flex items-center justify-center rounded-md ColorCore p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -71,11 +71,11 @@ const Header = (props) => {
             </div>
             <nav
               className={
-                ' space-x-10 hidden lg:flex  lg:w-3/4 nav-menu  px-10 z-10'
+                ' space-x-10 hidden lg:block  lg:w-3/4 nav-menu  px-10'
               }
               id="nav1"
             >
-              <div className="flex flex-col text-center mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 lg:gap-0 xl:gap-7">
+              <div className="flex flex-col text-center mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 gap-0 xl:gap-10">
                 <NavLink
                   className={({ isActive }) => {
                     return isActive
@@ -152,7 +152,7 @@ const Header = (props) => {
             <nav
               className={
                 navShow
-                  ? ' space-x-10 lg:hidden flex justify-center lg:w-1/2 ColorCore py-5 px-10 absolute top-16 w-full left-0 z-50'
+                  ? ' space-x-10 lg:hidden flex justify-center lg:w-1/2 ColorCore py-5 px-10 absolute top-16 w-full left-0'
                   : 'hidden'
               }
               id="nav1"
