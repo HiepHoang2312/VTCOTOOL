@@ -1,19 +1,51 @@
+import { useEffect, useState } from 'react';
 import './index.css';
 
-const PriceList = () => {
+const PriceList = ({ Rectangle }) => {
+  const [tab, setTab] = useState(false);
+
+  const [rectangle, SetRectangle] = useState(true);
+
+  useEffect(() => {
+    SetRectangle(Rectangle);
+  }, []);
+
   return (
-    <section className="py-10 md:py-20">
+    <section className="py-20 md:py-32 relative">
+      <div
+        className={
+          rectangle
+            ? 'lg:block hidden w-full ColorCore h-16 absolute -z-10 top-2/3 -translate-y-2/3'
+            : 'hidden'
+        }
+      ></div>
       <div className="container mx-auto 2xl:px-44 mb-10">
         <div className=" w-full">
-          <h1 className="mb-5 md:mb-20 font-bold text-xl py-1 md:text-4xl TextCore  text-center">
+          <h1 className=" mb-5 font-bold text-xl py-1 md:text-4xl TextCore  text-center">
             Bảng Giá
           </h1>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-8">
-            <div className="p-6 h-auto  bg-white flex flex-col justify-between cardPrize">
+          <div className="mb-5 md:mb-20 lg:-z-30 z-30 flex justify-center">
+            <button
+              className={tab ? 'SmallText p-2 z-30' : 'tabButton p-2 z-30'}
+              onClick={() => setTab(false)}
+            >
+              AutoCAD
+            </button>
+            <button
+              className={tab ? 'tabButton p-2 z-30' : 'SmallText p-2 z-30'}
+              onClick={() => setTab(true)}
+            >
+              Civil 3D
+            </button>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-8 ">
+            <div className="mx-10 lg:mx-0 p-6 h-auto  bg-white flex flex-col justify-between cardPrize">
               <div>
-                <h1 className="font-semibold text-base md:text-2xl md:mb-6 mb-2">
-                  Bản Trail
-                </h1>
+                <div className="-translate-x-8  borderImagine ColorCore w-2/3 md:mb-6 mb-2 p-2 ">
+                  <h1 className="font-semibold  text-base md:text-2xl ">
+                    Bản Trail
+                  </h1>
+                </div>
                 <p className="SmallText mb-2 text-xs md:text-base">Chỉ từ</p>
                 <h2 className="font-bold text-xl md:text-4xl mb-2 TextCore">
                   0 đ
@@ -30,11 +62,13 @@ const PriceList = () => {
                 </button>
               </div>
             </div>
-            <div className="p-6 h-auto  cardPrize bg-white  flex flex-col justify-between">
+            <div className="mx-10 lg:mx-0 p-6 h-auto  cardPrize bg-white  flex flex-col justify-between">
               <div>
-                <h1 className="font-semibold text-base md:text-2xl md:mb-6 mb-2">
-                  Bản chính thức
-                </h1>
+                <div className="-translate-x-8  borderImagine ColorCore w-2/3 md:mb-6 mb-2 p-2">
+                  <h1 className="font-semibold text-base md:text-2xl">
+                    Bản chính thức
+                  </h1>
+                </div>
                 <p className="SmallText mb-2 text-xs md:text-base">Chỉ từ</p>
                 <h2 className="font-bold text-xl md:text-4xl mb-2 TextCore">
                   1.900.000 đ
@@ -54,11 +88,13 @@ const PriceList = () => {
                 </button>
               </div>
             </div>
-            <div className="p-6 h-auto  cardPrize bg-white  flex flex-col justify-between">
+            <div className="mx-10 lg:mx-0 p-6 h-auto  cardPrize bg-white  flex flex-col justify-between">
               <div>
-                <h1 className="font-semibold text-base md:text-2xl md:mb-6 mb-2">
-                  Gói Combo
-                </h1>
+                <div className="-translate-x-8  borderImagine ColorCore w-2/3 md:mb-6 mb-2 p-2">
+                  <h1 className="font-semibold text-base md:text-2xl">
+                    Gói Combo
+                  </h1>
+                </div>
                 <p className="SmallText mb-2 text-xs md:text-base">Chỉ từ</p>
                 <h2 className="font-bold text-xl md:text-4xl mb-2 TextCore">
                   0 đ

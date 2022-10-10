@@ -10,7 +10,7 @@ import { EffectCoverflow } from 'swiper';
 
 const SliderSection = () => {
   return (
-    <section className="py-8 md:py-16">
+    <section className="py-8 ">
       <div className="container mx-auto 2xl:px-44 px-5">
         <div className=" w-full text-center">
           <h1 className=" mb-10 md:mb-20 font-bold text-xl md:text-4xl TextCore py-1">

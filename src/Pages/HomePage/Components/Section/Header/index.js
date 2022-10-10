@@ -113,9 +113,9 @@ const Header = (props) => {
                       ? 'nav-item  block py-5   text-white  bg-primary-700  lg:text-primary-700  dark:text-white NavActive'
                       : 'nav-item  block py-5   text-white  bg-primary-700  lg:text-primary-700  dark:text-white'
                   }
-                  to="/introduce"
+                  to="/price"
                 >
-                  Bẳng giá
+                  Bảng giá
                 </NavLink>
                 <NavLink
                   className={({ isActive }) => {
@@ -195,9 +195,9 @@ const Header = (props) => {
                       ? 'nav-item  block py-5   text-white  bg-primary-700  lg:text-primary-700  dark:text-white NavActive'
                       : 'nav-item  block py-5   text-white  bg-primary-700  lg:text-primary-700  dark:text-white'
                   }
-                  to="/introduce"
+                  to="/price"
                 >
-                  Bẳng giá
+                  Bảng giá
                 </NavLink>
                 <NavLink
                   className={({ isActive }) => {

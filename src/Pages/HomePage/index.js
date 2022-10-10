@@ -8,7 +8,7 @@ import FormRegister from './Components/Section/FormRegister';
 
 import Header from './Components/Section/Header';
 
-import Introduce from './Components/Section/Introduce';
+/* import Introduce from './Components/Section/Introduce'; */
 
 import Outstanding from './Components/Section/Outstanding';
 
@@ -27,13 +27,13 @@ const Homepage = () => {
 
       <Outstanding />
 
-      <Introduce />
+      {/*  <Introduce /> */}
 
       <Customer />
 
       <SliderSection />
 
-      <PriceList />
+      <PriceList Rectangle={false} />
 
       <FormRegister />
 
