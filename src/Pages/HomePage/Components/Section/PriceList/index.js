@@ -41,7 +41,7 @@ const PriceList = ({ Rectangle }) => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-8 ">
             <div className="mx-10 lg:mx-0 p-6 h-auto  bg-white flex flex-col justify-between cardPrize">
               <div>
-                <div className="-translate-x-8  borderImagine ColorCore w-2/3 md:mb-6 mb-2 p-2 ">
+                <div className="-translate-x-8  borderImagine ColorCore w-2/3 h-12 md:mb-6 mb-2 p-2 ">
                   <h1 className="font-semibold  text-base md:text-2xl ">
                     Bản Trail
                   </h1>
@@ -64,7 +64,7 @@ const PriceList = ({ Rectangle }) => {
             </div>
             <div className="mx-10 lg:mx-0 p-6 h-auto  cardPrize bg-white  flex flex-col justify-between">
               <div>
-                <div className="-translate-x-8  borderImagine ColorCore w-2/3 md:mb-6 mb-2 p-2">
+                <div className="-translate-x-8  borderImagine ColorCore w-2/3 md:mb-6 mb-2 p-2 h-12">
                   <h1 className="font-semibold text-base md:text-2xl">
                     Bản chính thức
                   </h1>
@@ -90,7 +90,7 @@ const PriceList = ({ Rectangle }) => {
             </div>
             <div className="mx-10 lg:mx-0 p-6 h-auto  cardPrize bg-white  flex flex-col justify-between">
               <div>
-                <div className="-translate-x-8  borderImagine ColorCore w-2/3 md:mb-6 mb-2 p-2">
+                <div className="-translate-x-8  borderImagine ColorCore w-2/3 md:mb-6 mb-2 p-2 h-12">
                   <h1 className="font-semibold text-base md:text-2xl">
                     Gói Combo
                   </h1>

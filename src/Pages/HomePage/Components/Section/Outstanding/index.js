@@ -24,7 +24,7 @@ const Outstanding = () => {
       <div className="container mx-auto">
         <div className=" w-full text-center">
           <h1 className="md:mb-10 mb-5 font-bold text-xl md:text-4xl TextCore py-1">
-            Chức năng nổi bật
+            Chức Năng Nổi Bật
           </h1>
           <div className="mb-10 z-30 flex justify-center">
             <button

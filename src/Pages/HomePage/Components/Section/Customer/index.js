@@ -7,7 +7,7 @@ const Customer = () => {
     <section className="md:py-16 py-8 text-center">
       <div className="container mx-auto px-5">
         <h1 className="TextCore font-bold text-xl md:text-4xl pb-8 md:pb-16">
-          Khách hàng của chúng tôi
+          Khách Hàng Của Chúng Tôi
         </h1>
         <div className="flex justify-center">
           <div className="grid grid-cols-3 gap-2 md:gap-20">
