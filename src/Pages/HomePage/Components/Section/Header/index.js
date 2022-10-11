@@ -31,7 +31,7 @@ const Header = (props) => {
   return (
     <header
       className={
-        a ? 'fixed top-2 w-full   opacity-80 z-20 ' : 'fixed top-0 w-full z-20 '
+        a ? 'fixed top-2 w-full   opacity-80 z-50 ' : 'fixed top-0 w-full z-50 '
       }
     >
       <div>

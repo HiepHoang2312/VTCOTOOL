@@ -2,6 +2,8 @@ import './index.css';
 
 import { useForm } from 'react-hook-form';
 
+import emailjs from '@emailjs/browser';
+
 const FormRegister = () => {
   const {
     register,
@@ -11,6 +13,17 @@ const FormRegister = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+
+    emailjs
+      .send('service_ck0rxma', 'template_u1mte4i', data, 'LRAbLp_-EoYljq2tN')
+      .then(
+        (result) => {
+          console.log(result.text, 'test');
+        },
+        (error) => {
+          console.log(error.text, 's');
+        },
+      );
   };
 
   return (
