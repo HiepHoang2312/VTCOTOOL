@@ -8,6 +8,7 @@ const FormRegister = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -18,7 +19,8 @@ const FormRegister = () => {
       .send('service_ck0rxma', 'template_u1mte4i', data, 'LRAbLp_-EoYljq2tN')
       .then(
         (result) => {
-          console.log(result.text, 'test');
+          alert('Gửi mail thành công');
+          reset();
         },
         (error) => {
           console.log(error.text, 's');
